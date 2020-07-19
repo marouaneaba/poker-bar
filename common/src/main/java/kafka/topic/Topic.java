@@ -9,6 +9,10 @@ import lombok.ToString;
  * Topic imuable value objet
  */
 //TODO apply lombok
+ * Topic imuuable value objet
+ */
+@Builder
+@AllArgsConstructor
 public final class Topic {
 
 	private String name;
