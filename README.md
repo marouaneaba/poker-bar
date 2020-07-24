@@ -8,11 +8,15 @@
 
 
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+This project present in two versions:
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+Version 1 Modular functional orientation:
+  - Common
+  - beer
+  - coffee
+  - .....
+    
+Version 2 en micro service.
 
 # New Features!
 
@@ -62,6 +66,7 @@ Dillinger uses a number of open source projects to work properly:
 * [Gulp] - the streaming build system
 * [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
 * [jQuery] - duh
+* [semVer] - Gestion sémantique version Git.
 
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
@@ -108,6 +113,15 @@ There is no need to create or manage several branches.
 Our realization goes directly to the production (market), we do not use the delivery by peroid, suddenly we do not have a process "the RELEASE / vX.YZ branch" which must be validated and stabilized so that it is available in the production.
 
 We do not use any process between the finished realization (DoD) and production, we use CI / CD.
+
+This project use the semantic management version : [semVer](https://semver.org/lang/fr/) 
+
+Generate the .gitignore, ignore the files to push into remote git [.gitIgnore genérateur](https://www.toptal.com/developers/gitignore) 
+
+Delete files ignored by git in the local : 
+```
+# git clean -Xdf .
+```
 
 ### Development
 
@@ -170,7 +184,7 @@ Script to generate changelog -> https://github.com/marouaneaba/git-changelog/blo
 https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog
 
 #### Jenkins CI/CD
-See [Jenkins.md](https://github.com/jenkins.md)
+See [Jenkins.md](https://github.com/marouaneaba/CI-CD-Docker-Jenkins-Sonar)
 
 #### Kafka
 See [Kafka.md](https://github.com/kafka.md)
@@ -184,7 +198,7 @@ See [KUBERNETES.md](https://github.com/KUBERNETES.md)
 
 ### Todos
 
- - Write MORE Tests
+ - Write MORE Tests [TODO] (https://trello.com/b/jYAfTZwv/poker-bar)
  - Add Night Mode
 
 License
@@ -212,6 +226,7 @@ MIT
    [AngularJS]: <https://angular.io/>
    [Gulp]: <http://gulpjs.com>
    [Git-hub flow]: <https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/github-flow>
+   [semVer]: <https://semver.org/lang/fr/>
 
    [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
    [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
