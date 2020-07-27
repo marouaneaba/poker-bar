@@ -6,6 +6,8 @@ Module architecture:
 ![img](https://github.com/marouaneaba/poker-bar/blob/develop/shema-module-projet.png)
 
 
+
+
 Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 
   - Type some Markdown on the left
@@ -14,6 +16,7 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered H
 
 # New Features!
 
+  - Public trello: https://trello.com/b/jYAfTZwv/poker-bar
   - Import a HTML file and watch it magically convert to Markdown
   - Drag and drop images (requires your Dropbox account be linked)
 
