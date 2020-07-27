@@ -1,15 +1,13 @@
-package repository.kafka;
+package com.poker.kafka;
 
 import kafka.producter.ProducterService;
 import kafka.topic.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.support.KafkaHeaders;
-import org.springframework.messaging.handler.annotation.Header;
-import org.springframework.messaging.handler.annotation.Payload;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
 @Service
+@ComponentScan(basePackageClasses = kafka.producter.ProducterService.class)
 public class KafkaService {
 
 	@Autowired

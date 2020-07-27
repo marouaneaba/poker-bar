@@ -1,17 +1,22 @@
 plugins {
+    // Apply the java plugin to add support for Java
     id 'java'
+
+    // Apply the application plugin to add support for building a CLI application.
+    id 'application'
+
 }
 
 version 'unspecified'
 
-sourceCompatibility = 1.8
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.3.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.1.RELEASE'
     compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.3.RELEASE'
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
