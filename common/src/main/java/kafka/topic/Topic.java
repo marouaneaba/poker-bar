@@ -8,13 +8,18 @@ import lombok.ToString;
 /**
  * Topic imuable value objet
  */
-@Builder
-@AllArgsConstructor
+//TODO apply lombok
 public final class Topic {
 
 	private String name;
 	private int numPartitions;
 	private short replicartionFactor;
+
+	public Topic(String name, int  numPartitions,  short replicartionFactor){
+		this.name = name;
+		this.numPartitions = numPartitions;
+		this.replicartionFactor = replicartionFactor;
+	}
 
 	public String getName() {
 		return name;

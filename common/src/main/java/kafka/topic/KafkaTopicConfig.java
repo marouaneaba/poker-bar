@@ -13,16 +13,16 @@ import org.springframework.kafka.core.KafkaAdmin;
 @Configuration
 public class KafkaTopicConfig {
 
-	@Value("${kafka.boostrap-kafka-server.ip}")
+	@Value("kafka.boostrap-kafka-server.ip")
 	private String kafkaBoostrapServerIp;
 
-	@Value("${kafka.boostrap-kafka-server.port}")
+	@Value("kafka.boostrap-kafka-server.port")
 	private String kafkaBoostrapServerPort;
 
 	@Bean
 	public KafkaAdmin kafkaAdmin(){
 		Map<String,Object> configs = new HashMap<>();
-		configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, String.format("%d:%d",kafkaBoostrapServerIp,kafkaBoostrapServerPort));
+		configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, String.format("%s:%s",kafkaBoostrapServerIp,kafkaBoostrapServerPort));
 		return new KafkaAdmin(configs);
 	}
 

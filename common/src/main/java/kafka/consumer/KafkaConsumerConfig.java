@@ -17,10 +17,10 @@ import org.springframework.util.StringUtils;
 @Configuration
 public class KafkaConsumerConfig {
 
-	@Value("${kafka.boostrap-kafka-server.ip}")
+	@Value("kafka.boostrap-kafka-server.ip")
 	private String kafkaBoostrapServerIp;
 
-	@Value("${kafka.boostrap-kafka-server.port}")
+	@Value("kafka.boostrap-kafka-server.port")
 	private String kafkaBoostrapServerPort;
 
 	@Bean
@@ -28,7 +28,7 @@ public class KafkaConsumerConfig {
 		Map<String, Object> props = new HashMap<>();
 		props.put(
 				ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-				String.format("%d:%d",kafkaBoostrapServerIp,kafkaBoostrapServerPort));
+				String.format("%s:%s",kafkaBoostrapServerIp,kafkaBoostrapServerPort));
 		props.put(
 				ConsumerConfig.GROUP_ID_CONFIG,
 				"1");
