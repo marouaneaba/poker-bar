@@ -1,4 +1,4 @@
-package kafka;
+package repository.kafka;
 
 import kafka.consumer.SubscribeKafkaInterface;
 

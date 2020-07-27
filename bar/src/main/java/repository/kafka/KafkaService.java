@@ -1,4 +1,4 @@
-package kafka;
+package repository.kafka;
 
 import kafka.producter.ProducterService;
 import kafka.topic.Topic;

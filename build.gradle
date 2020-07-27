@@ -35,8 +35,6 @@ dependencies {
     }
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-    compile project(':presentation')
-    compile project(':repository')
 
 }
 
