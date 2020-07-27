@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -12,18 +13,23 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
-import static kafka.KafkaConstant.*;
 
 
 @Configuration
 public class KafkaProducterConfig {
+
+	@Value("${kafka.boostrap-kafka-server.ip}")
+	private String kafkaBoostrapServerIp;
+
+	@Value("${kafka.boostrap-kafka-server.port}")
+	private String kafkaBoostrapServerPort;
 
 	@Bean
 	public ProducerFactory<String, String> producerFactory() {
 		Map<String, Object> configProps = new HashMap<>();
 		configProps.put(
 				ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
-				BOOSTRAP_SERVERS_CONFIG);
+				String.format("%d:%d",kafkaBoostrapServerIp,kafkaBoostrapServerPort));
 		configProps.put(
 				ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
 				JsonSerializer.class);

@@ -1,7 +1,5 @@
-package kafka;
+package kafka.consumer;
 
-import kafka.producter.ProducterService;
-import kafka.topic.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.KafkaHeaders;
@@ -10,17 +8,15 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
 @Service
-public class KafkaService {
+public class ConsumerService {
 
 	@Autowired
-	private ProducterService producterService;
+	private SubscribeKafkaInterface subscribeKafkaInterface;
 
-	/**
-	 * send stream to topic
-	 * @param topic topic
-	 * @param message  stream send to topic
-	 */
-	public void sendMessage(final Topic topic, String message){
-		producterService.sendSynMessage(topic, message);
+	@KafkaListener(topics = "topicBar")
+	public void subscribeTopicName(@Payload String message,
+			@Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition){
+
+		subscribeKafkaInterface.runTopicBar(message,partition);
 	}
 }
