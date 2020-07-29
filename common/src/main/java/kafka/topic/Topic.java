@@ -8,7 +8,6 @@ import lombok.ToString;
 /**
  * Topic imuable value objet
  */
-//TODO apply lombok
 public final class Topic {
 
 	private String name;
