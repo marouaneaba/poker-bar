@@ -142,6 +142,11 @@ Verify the deployment by navigating to your server address in your preferred bro
 ```sh
 127.0.0.1:8000
 ```
+#### CHANGE LOG
+See [CHANGELOG.md](https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog)
+Script to generate changelog -> https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog
+
+https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog
 #### Jenkins CI/CD
 See [KUBERNETES.md](https://github.com/jenkins.md)
 #### Kafka
