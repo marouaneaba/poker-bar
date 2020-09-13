@@ -20,12 +20,24 @@ node {
     }
 
     stage('Sonar'){
-        try {
+        //try {
             sh "./gradlew sonarqube"
-        } catch(error){
+        /*} catch(error){
             echo "The sonar server could not be reached ${error}"
-        }
+        }*/
      }
+
+     /*stage('Build') {
+
+     }
+
+     stage('Test') {
+
+     }
+
+     stage('Package') {
+
+     }*/
 
     /*stage("Image Prune"){
         imagePrune(CONTAINER_NAME)

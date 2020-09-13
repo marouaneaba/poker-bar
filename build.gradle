@@ -14,7 +14,10 @@ plugins {
     id 'application'
     
     // Apply the spring plugin  to add support for Spring Boot
-    id 'org.springframework.boot' version '2.0.4.RELEASE'
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+
+    // Sonar analyse
+    id "org.sonarqube" version "2.7"
 }
 
 sourceCompatibility = '11'

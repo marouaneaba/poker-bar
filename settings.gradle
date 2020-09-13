@@ -9,7 +9,6 @@
 
 rootProject.name = 'poker-bar-backend'
 include 'common'
-include 'presentation'
 include 'bar'
 include 'registry'
 
