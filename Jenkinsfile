@@ -27,7 +27,7 @@ node {
         }*/
      }
 
-     /*stage('Build') {
+  /* stage('Build') {
 
      }
 
@@ -35,9 +35,13 @@ node {
 
      }
 
+     stage('Quality') {
+
+     }
+
      stage('Package') {
 
-     }*/
+     } */
 
     /*stage("Image Prune"){
         imagePrune(CONTAINER_NAME)
