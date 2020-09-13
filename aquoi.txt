@@ -1,0 +1,5 @@
+c'est quoi docker?
+c'est quoi un env docker?
+c'est quoi l'intégration continue?
+
+Docker-compose: c'est une solution utiliser pour les services/conteneur doivent démarrer ensemble, et  fonctionner ensemble.
