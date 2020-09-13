@@ -1,1 +1,8 @@
-h
+hdhhjhghhggffr
+1. Créer pipeline par env
+2. Créer l'intégration continue par env.
+3. Mettre sonar dans les PR.
+4.créer  un contenuer pour déployer notre application.
+5. utiliserrr terraform pour créerd es VM pour déployer.
+5. faire un tuto ansible.
+terraform
