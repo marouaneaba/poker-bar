@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Module architecture:
+# Module architecture (DDD / Clean archi):
 ![img](https://github.com/marouaneaba/poker-bar/blob/develop/shema-module-projet.png)
 
 
@@ -42,7 +42,18 @@ This text you see here is *actually* written in Markdown! To get a feel for Mark
 
 Dillinger uses a number of open source projects to work properly:
 
-* [AngularJS] - HTML enhanced for web apps!
+* [Angular] - HTML enhanced for web apps!
+* [Spring] - 
+* [Keycloak] -
+* [Atom] - 
+* [Inttelij] - 
+* [Boostrap] - 
+* [Saas/Css3] - 
+* [Docker] - 
+* [AWS] - 
+* [Jenkins] - 
+* [Sonar] - 
+* [Github] - 
 * [Ace Editor] - awesome web-based text editor
 * [markdown-it] - Markdown parser done right. Fast and easy to extend.
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
@@ -87,6 +98,16 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 | Medium | [plugins/medium/README.md][PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
 
+### Git:
+
+Our project uses continuous delivery, each feature finished and respecting the definition of done must go directly into production to speed up our time to market, so we use the git-hub flow.
+
+[Git-hub flow] is a method for managing branches in a project with the use of git.
+There is no need to create or manage several branches.
+
+Our realization goes directly to the production (market), we do not use the delivery by peroid, suddenly we do not have a process "the RELEASE / vX.YZ branch" which must be validated and stabilized so that it is available in the production.
+
+We do not use any process between the finished realization (DoD) and production, we use CI / CD.
 
 ### Development
 
@@ -147,14 +168,17 @@ See [CHANGELOG.md](https://github.com/marouaneaba/git-changelog/blob/develop/git
 Script to generate changelog -> https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog
 
 https://github.com/marouaneaba/git-changelog/blob/develop/git-changelog
-#### Jenkins CI/CD
-See [KUBERNETES.md](https://github.com/jenkins.md)
-#### Kafka
-See [KUBERNETES.md](https://github.com/kafka.md)
-#### keycloak
-See [KUBERNETES.md](https://github.com/keycloak.md)
-#### Kubernetes
 
+#### Jenkins CI/CD
+See [Jenkins.md](https://github.com/jenkins.md)
+
+#### Kafka
+See [Kafka.md](https://github.com/kafka.md)
+
+#### keycloak
+See [Keycloak.md](https://github.com/keycloak.md)
+
+#### Kubernetes
 See [KUBERNETES.md](https://github.com/KUBERNETES.md)
 
 
@@ -185,8 +209,9 @@ MIT
    [jQuery]: <http://jquery.com>
    [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
    [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
+   [AngularJS]: <https://angular.io/>
    [Gulp]: <http://gulpjs.com>
+   [Git-hub flow]: <https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/github-flow>
 
    [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
    [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
