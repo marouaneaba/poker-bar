@@ -1,12 +1,8 @@
-plugins {
-    id 'java'
-}
+plugins {}
 
 
 
-repositories {
-    mavenCentral()
-}
+repositories {}
 
 dependencies {
     compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.3.RELEASE'
