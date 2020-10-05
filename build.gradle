@@ -17,13 +17,12 @@ plugins {
     id 'org.springframework.boot' version '2.0.4.RELEASE'
 }
 
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
 }
 
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 11
 
 
 

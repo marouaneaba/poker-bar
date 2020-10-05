@@ -5,7 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- *
+ * Topic imuable value objet
+ */
+//TODO apply lombok
  * Topic imuuable value objet
  */
 @Builder
@@ -17,4 +19,21 @@ public final class Topic {
 	private int numPartitions;
 	private short replicartionFactor;
 
+	public Topic(String name, int  numPartitions,  short replicartionFactor){
+		this.name = name;
+		this.numPartitions = numPartitions;
+		this.replicartionFactor = replicartionFactor;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	protected int getNumPartitions(){
+		return numPartitions;
+	}
+
+	protected short getReplicartionFactor(){
+		return replicartionFactor;
+	}
 }
