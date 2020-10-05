@@ -8,6 +8,8 @@
  */
 
 rootProject.name = 'poker-bar-backend'
-include 'common'
 include 'bar'
+include 'biere'
+include 'cafe'
+include 'common'
 
