@@ -1,14 +1,9 @@
-plugins {
-
-
-}
+plugins {}
 
 
 
-repositories {
-    mavenCentral()
-}
+repositories {}
 
 dependencies {
-
+    compile project(':common')
 }

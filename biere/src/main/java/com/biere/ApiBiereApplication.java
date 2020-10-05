@@ -1,8 +1,8 @@
-package com.bar;
+package com.biere;
 
 
 
-public class ApiBarApplication {
+public class ApiBiereApplication {
 	public static void main(String ... args){
 
 	}
