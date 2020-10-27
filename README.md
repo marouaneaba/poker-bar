@@ -1,6 +1,7 @@
 # Poker-Bar
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![CI/CD merge master](https://github.com/marouaneaba/poker-bar-backend/actions/workflows/gradle.yml/badge.svg)](https://github.com/marouaneaba/poker-bar-backend/actions/workflows/gradle.yml)
 
 # Module architecture (DDD / Clean archi):
 ![img](https://github.com/marouaneaba/poker-bar/blob/develop/shema-module-projet.png)
@@ -146,6 +147,23 @@ $ gulp watch
 ```sh
 $ karma test
 ```
+
+### Intégration continue:
+#### Build: 
+  ...
+#### Test:  
+  ...
+#### Sonar: 
+[lien vers sonar du projet](https://sonarcloud.io/organizations/marouaneaba/projects) <br/>
+L'objetif du [Sonar](https://sonarcloud.io/organizations/marouaneaba/projects) c'est de donné des notification au développeur, des amélioration à faire dans le code.
+Sonar permet de controller la qualité du code à livrer avant de l'intégrer dans le projet ( duplication, code smile/compléxité du code, couverture du code, recherche des bugs).
+
+- Sonar utilisé dans l'integration continue pour check le code avant de l'intégrer dans le projet
+- Sonar utilisé dans les checks de la PR dans partie Check, un rapport sonar générer dans la PR.
+- SoanrLint plugin d'IDE code local pour vérifier la structure du code avant de créer une PR et livrer.
+
+#### Artifact: 
+  ...
 #### Building for source
 For production release:
 ```sh
