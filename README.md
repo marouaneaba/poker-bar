@@ -149,7 +149,7 @@ $ karma test
 
 ### Intégration continue:
 #### Sonar:
-L'objetif du [Sonar] [lien vers sonar du projet] (https://sonarcloud.io/organizations/marouaneaba/projects) c'est de donné des notification au développeur, des amélioration à faire dans le code.
+L'objetif du [Sonar](https://sonarcloud.io/organizations/marouaneaba/projects) [lien vers sonar du projet](https://sonarcloud.io/organizations/marouaneaba/projects) c'est de donné des notification au développeur, des amélioration à faire dans le code.
 Sonar permet de controller la qualité du code à livrer avant de l'intégrer dans le projet ( duplication, code smile/compléxité du code, couverture du code, recherche des bugs).
 
 - Sonar utilisé dans l'integration continue pour check le code avant de l'intégrer dans le projet
