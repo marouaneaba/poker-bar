@@ -1,12 +1,13 @@
 package com.common.kafka.topic;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
 /**
- *
- * Topic imuuable value objet
+ * Topic imuable value objet
+//TODO apply lombok
  */
 @Builder
 @AllArgsConstructor
@@ -16,5 +17,4 @@ public final class Topic {
 	private String name;
 	private int numPartitions;
 	private short replicartionFactor;
-
 }

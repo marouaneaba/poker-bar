@@ -1,13 +1,16 @@
 plugins {}
 
 
-
 repositories {}
 
-dependencies {
-    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.3.RELEASE'
+ext {
+    swaggerVersion = "3.0.0"
 }
 
-jar {
-    enabled = true
+dependencies {
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: springVersion
+
+    compile group: 'io.springfox', name: 'springfox-boot-starter', version: swaggerVersion
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion
+
 }
