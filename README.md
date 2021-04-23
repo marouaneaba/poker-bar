@@ -4,7 +4,7 @@
 [![CI/CD merge master](https://github.com/marouaneaba/poker-bar-backend/actions/workflows/gradle.yml/badge.svg)](https://github.com/marouaneaba/poker-bar-backend/actions/workflows/gradle.yml)
 
 # Module architecture (DDD / Clean archi):
-![img](https://github.com/marouaneaba/poker-bar/blob/develop/shema-module-projet.png)
+![img](https://github.com/marouaneaba/poker-bar-backend/blob/master/shema-module-projet.png)
 
 
 
